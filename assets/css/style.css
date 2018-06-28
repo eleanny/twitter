@@ -1,0 +1,36 @@
+body{
+	background-color: #ccc;
+}
+.twitter__profile--imagen{
+	border-radius: 100%;
+	height: 20%;
+	width: 10%;
+}
+.twitter__formulario--img{
+	border-radius: 100%;
+	height: 30%;
+	width: 20%;
+}
+.tweet__new{
+	border: solid 2px gray;
+}
+.tweet__text{
+	font-size: 2rem;
+}
+.tweet__contador{
+	font-size: 1.5rem;
+}
+.likes {
+  display: inline-flex;
+}
+.like__icono--click{
+	color: red;
+}
+.tweet__remover{
+	float: right;
+}
+@media only screen and (max-width: 767px){
+  .navbar__title{
+  	display: none;
+  }
+}
