@@ -6,15 +6,14 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<script src="assets/js/lib/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/app.js"></script>
+
 </head>
 <body>
 	<!--BARRA DE NAVEGACION-->
 	<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
 	  <h1 class="navbar__title pl-5 text-white"><i class="fab fa-twitter text-white"></i>  Mytwitter</h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
      </button>
      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
@@ -26,19 +25,21 @@
   <!--SECCION Twee y agregar twitter-->
   <section class="twitter container-fluid pt-5">
     	<div class="row">
-  		  <div class="twitter__profile col-md-5 mt-5">
-   		  	<div class="card mb-4">
-              <div class="card-header bg-primary">
-                   <img src="assets/images/foto_perfil.jpg" class="twitter__profile--imagen">
-                   <h4 class="text-white">ELEANNY BASTARDO</h4>
-                   <h6>@eleannybm</h6>
-              </div>
-              <div class="card-body">
-                  <h5 class="card-title">Fanatica del Real Madrid</h5>
-                   <p class="card-text">Me gusta ir al cine y dormir mucho.</p>
+    	  <!--Perfil del usuario-->
+  		  <div class="twitter__profile col-12 col-md-5 mt-5">
+   		  	  <div class="card mb-4">
+                  <div class="card-header bg-primary">
+                     <img src="assets/images/foto_perfil.jpg" class="twitter__profile--imagen">
+                      <h4 class="twitter__profile--name text-white">ELEANNY BASTARDO</h4>
+                     <h6>@eleannybm</h6>
+                 </div>
+                 <div class="card-body">
+                     <h5 class="card-title">Fanatica del Real Madrid</h5>
+                     <p class="card-text">Me gusta ir al cine y dormir mucho.</p>
+                 </div>
              </div>
-          </div>
               <div class="card">
+              	 <!--Formulario para crear tweet-->
   		          <div class="twitter__formulario">
                       <form action="#" class="twitter__formulario--inner" autocomplete="off">
                       	  <div class="card-header bg-primary">
@@ -47,23 +48,28 @@
            	              <div class="form-group m-2">
                              <img id="imagen__form" src="assets/images/Image-default.png" class="twitter__formulario--img">
                            </div>
-                           <div class="form-group m-2">
-                              <input id="uploadedfile" name="uploadedfile" type="file" class="twitter__formulario--upload" required/>
+                           <div class="form-group m-2 twitter__formulario--upload">
+                              <input id="uploadedfile" name="uploadedfile" type="file" class="twitter__formulario--upload1" required />
                            </div>
                            <div class="form-group m-2">
-                              <textarea class="texto form-control" id="exampleFormControlTextarea1"></textarea>
+                              <textarea class="texto form-control twitter__formulario--textarea" id="exampleFormControlTextarea1" required></textarea>
                            </div>
                            <button type="submit" class="boton btn btn-primary m-2">Tweet</button>
                       </form>
   		         </div>
   	         </div>
   	     </div>
-  		 <!--YO-->
-  		  <div class="tweet col-md-7 mt-5">
+  		 <!--Aqui se agregan los tweet-->
+  		  <div class="tweet col-12 col-md-7 mt-5">
                 
   		 </div>
   	 </div>
   </section>
+  	<script src="assets/js/lib/jquery-3.3.1.min.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <script src="assets/js/app.js"></script>
 </body>
 </html>

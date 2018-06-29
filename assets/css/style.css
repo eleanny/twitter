@@ -3,25 +3,37 @@ body{
 }
 .twitter__profile--imagen{
 	border-radius: 100%;
-	height: 20%;
-	width: 10%;
+	height: 40%;
+	width: 30%;
 }
 .twitter__formulario--img{
 	border-radius: 100%;
 	height: 30%;
 	width: 20%;
+	cursor: pointer;
 }
 .tweet__new{
 	border: solid 2px gray;
 }
 .tweet__text{
-	font-size: 2rem;
+	font-size: 1.5rem;
+}
+.tweet__img{
+	border-radius: 100%;
+	height: 20%;
+	width: 10%;
 }
 .tweet__contador{
 	font-size: 1.5rem;
 }
+.twitter__formulario--upload1{
+   font-size: 0.7rem;
+}
 .likes {
   display: inline-flex;
+}
+.likes__icono{
+	cursor: pointer;
 }
 .like__icono--click{
 	color: red;
@@ -30,7 +42,29 @@ body{
 	float: right;
 }
 @media only screen and (max-width: 767px){
-  .navbar__title{
+ .navbar__title{
   	display: none;
-  }
+}
+ .twitter__profile--imagen{
+	border-radius: 100%;
+	height: 30%;
+	width: 40%;
+}
+.twitter__profile--name{
+	font-size: 1rem;
+}
+.tweet__text{
+	font-size: 1rem;
+}
+.tweet__img{
+	border-radius: 100%;
+	height: 30%;
+	width: 20%;
+}
+.likes__icono{
+	font-size: 1rem;
+}
+.tweet__contador{
+    font-size: 1rem;
+}
 }

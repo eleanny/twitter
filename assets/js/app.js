@@ -1,6 +1,6 @@
 $(document).ready(function(){
+
      $("#uploadedfile").change(function(e){
-     	        console.log('hola');
      	         var reader = new FileReader();
                  var file = $(e.target).get(0).files[0];
                  reader.readAsDataURL(file);
@@ -9,7 +9,8 @@ $(document).ready(function(){
                  	 };
                
 
-             });
+     });
+
 
 	$(".twitter__formulario--inner").submit(function(e){
 	        e.preventDefault();
@@ -18,7 +19,7 @@ $(document).ready(function(){
 	    	var texto = $('.texto').val();
 			var card = `<div class="tweet__new card w-85 mb-2">
 	                    <div class="card-body">
-	                      <img src="${imagen}" class="twitter__profile--imagen">
+	                      <img src="${imagen}" class="tweet__img">
 	                      <p class="tweet__text card-text pl-5 pt-3 pb-2">${texto}</p>
 	                      <div class="likes">
 	                	    <i class="likes__icono fas fa-heart fa-2x pr-2 pt-1"></i>
@@ -37,7 +38,6 @@ $(document).ready(function(){
 	});
 	$(".tweet").on('click','.likes__icono', function(event){
 	    event.preventDefault();
-	    console.log('Like!!');
 	    if(Number($(event.currentTarget).siblings("p").html()==0)){
 	       $(event.currentTarget).toggleClass("like__icono--click");
 	    }
@@ -46,7 +46,13 @@ $(document).ready(function(){
 	        
 	});
 	$(".tweet").on('click','.tweet__remover',function(event){
-       $(event.target).parents(".card").remove();
+       $(event.target).parents(".card").fadeOut(500, function(){
+       		$(this).remove();
+       });
+	});
+
+	$("#uploadedfile").hide();
+	$("#imagen__form").click(function(){
+		$("#uploadedfile").click();
 	});
 });
-///C:/Users/Lenovo/Desktop/Twitter/assets/images/C:/fakepath/she.jpg
